@@ -5,6 +5,120 @@ __metadata:
   version: 5
   cacheKey: 8
 
+"@TicTacToe-client@workspace:packages/client":
+  version: 0.0.0-use.local
+  resolution: "@TicTacToe-client@workspace:packages/client"
+  dependencies:
+    "@TicTacToe": "workspace:^"
+    "@TicTacToe-shared": ^1.0.0
+    "@testing-library/jest-dom": ^5.11.4
+    "@testing-library/react": ^11.1.0
+    "@testing-library/user-event": ^12.1.10
+    "@types/cookie-parser": ^1.4.2
+    "@types/debug": ^4.1.7
+    "@types/express": ^4.17.13
+    "@types/morgan": ^1.9.3
+    "@types/node": ^16.11.8
+    "@types/react": ^17.0.0
+    "@types/react-dom": ^17.0.0
+    "@types/webpack-dev-middleware": ^5.0.2
+    "@types/webpack-hot-middleware": ^2.25.5
+    classnames: ^2.3.1
+    clean-webpack-plugin: ^4.0.0
+    concurrently: ^6.4.0
+    cookie-parser: ^1.4.6
+    css-loader: ^6.5.1
+    debug: ^4.3.2
+    eslint-config-airbnb: ^19.0.0
+    eslint-plugin-jsx-a11y: ^6.5.1
+    eslint-plugin-react: ^7.27.0
+    eslint-plugin-react-hooks: ^4.3.0
+    express: ^4.17.1
+    file-loader: ^6.2.0
+    html-webpack-plugin: ^5.5.0
+    morgan: ^1.10.0
+    nodemon: ^2.0.15
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    style-loader: ^3.3.1
+    ts-loader: ^9.2.6
+    typescript: ^4.5.2
+    url-loader: ^4.1.1
+    webpack: ^5.64.1
+    webpack-cli: ^4.9.1
+    webpack-dev-server: ^4.5.0
+  languageName: unknown
+  linkType: soft
+
+"@TicTacToe-server@workspace:packages/server":
+  version: 0.0.0-use.local
+  resolution: "@TicTacToe-server@workspace:packages/server"
+  dependencies:
+    "@TicTacToe": "workspace:^"
+    "@TicTacToe-shared": ^1.0.0
+    "@types/cookie-parser": ^1.4.2
+    "@types/cors": ^2.8.12
+    "@types/debug": ^4.1.7
+    "@types/express": ^4.17.13
+    "@types/morgan": ^1.9.3
+    "@types/node": ^16.11.8
+    clean-webpack-plugin: ^4.0.0
+    concurrently: ^6.4.0
+    cookie-parser: ~1.4.4
+    cors: ^2.8.5
+    express: ~4.16.1
+    morgan: ~1.9.1
+    nodemon: ^2.0.15
+    source-map-support: ^0.5.21
+    ts-loader: ^9.2.6
+    typescript: ^4.5.2
+    webpack: ^5.64.4
+    webpack-cli: ^4.9.1
+    webpack-node-externals: ^3.0.0
+  languageName: unknown
+  linkType: soft
+
+"@TicTacToe-shared@^1.0.0, @TicTacToe-shared@workspace:packages/shared":
+  version: 0.0.0-use.local
+  resolution: "@TicTacToe-shared@workspace:packages/shared"
+  dependencies:
+    typescript: ^4.5.2
+  languageName: unknown
+  linkType: soft
+
+"@TicTacToe-shared@file:packages/shared::locator=%40TicTacToe%40workspace%3A.":
+  version: 1.0.0
+  resolution: "@TicTacToe-shared@file:packages/shared#packages/shared::hash=816a4f&locator=%40TicTacToe%40workspace%3A."
+  checksum: a17853bc631138feee3793396830131eca67477a811edb56dd1a8dff3b0b356a44ab3ebf40ca53b291bb781ce542029a2f1a974ad131eac42a94c284590e1f41
+  languageName: node
+  linkType: hard
+
+"@TicTacToe@workspace:., @TicTacToe@workspace:^":
+  version: 0.0.0-use.local
+  resolution: "@TicTacToe@workspace:."
+  dependencies:
+    "@TicTacToe-shared": "file:packages/shared"
+    "@types/jest": ^27.0.3
+    "@typescript-eslint/eslint-plugin": ^5.4.0
+    "@typescript-eslint/parser": ^5.4.0
+    cross-env: ^7.0.3
+    eslint: ^7.11.0
+    eslint-config-airbnb-base: ^14.2.1
+    eslint-config-prettier: ^8.3.0
+    eslint-import-resolver-typescript: ^2.5.0
+    eslint-plugin-import: ^2.25.3
+    eslint-plugin-jest: ^25.2.4
+    husky: ^7.0.4
+    jest: 27.4.0
+    jest-transform-stub: ^2.0.0
+    lint-staged: ^12.0.3
+    prettier: ^2.4.1
+    ts-jest: 27.0.7
+    ts-node: ^10.4.0
+    typescript: ^4.5.2
+  languageName: unknown
+  linkType: soft
+
 "@adobe/css-tools@npm:^4.0.1":
   version: 4.0.2
   resolution: "@adobe/css-tools@npm:4.0.2"
@@ -1429,11 +1543,13 @@ __metadata:
   linkType: hard
 
 "@types/webpack-dev-middleware@npm:^5.0.2":
-  version: 5.3.0
-  resolution: "@types/webpack-dev-middleware@npm:5.3.0"
+  version: 5.0.2
+  resolution: "@types/webpack-dev-middleware@npm:5.0.2"
   dependencies:
-    webpack-dev-middleware: "*"
-  checksum: 58609c1c34ead0552fe18576c0d6f411b7988030ec3517c07ca9938b4f37f962756b75bb9a694d1315b39134d05e2092b2e3c59ab76ff0715c5484e38602d0c4
+    "@types/connect": "*"
+    tapable: ^2.1.1
+    webpack: ^5.38.1
+  checksum: fd7ff7608362a1bd01ca7f89d1f3308d21519e4271a16f672e7801b087618c9fda10a102db61a8f5fda1253d580bfc227d574feb10ee0d87d24288f19bd846a9
   languageName: node
   linkType: hard
 
@@ -1819,108 +1935,6 @@ __metadata:
   checksum: 8ed0d477ce3bc9c6fe2bf6a6a2cc316bb9c4127c5a7827bae947fa8ec34c7092395c5a283cc300c05b5fa01cbbfa1f938f410a7bf75db7c7846fea41949989ec
   languageName: node
   linkType: hard
-
-"TicTacToe-client@workspace:packages/client":
-  version: 0.0.0-use.local
-  resolution: "TicTacToe-client@workspace:packages/client"
-  dependencies:
-    "@testing-library/jest-dom": ^5.11.4
-    "@testing-library/react": ^11.1.0
-    "@testing-library/user-event": ^12.1.10
-    "@types/cookie-parser": ^1.4.2
-    "@types/debug": ^4.1.7
-    "@types/express": ^4.17.13
-    "@types/morgan": ^1.9.3
-    "@types/node": ^16.11.8
-    "@types/react": ^17.0.0
-    "@types/react-dom": ^17.0.0
-    "@types/webpack-dev-middleware": ^5.0.2
-    "@types/webpack-hot-middleware": ^2.25.5
-    classnames: ^2.3.1
-    clean-webpack-plugin: ^4.0.0
-    concurrently: ^6.4.0
-    cookie-parser: ^1.4.6
-    css-loader: ^6.5.1
-    debug: ^4.3.2
-    eslint-config-airbnb: ^19.0.0
-    eslint-plugin-jsx-a11y: ^6.5.1
-    eslint-plugin-react: ^7.27.0
-    eslint-plugin-react-hooks: ^4.3.0
-    express: ^4.17.1
-    file-loader: ^6.2.0
-    html-webpack-plugin: ^5.5.0
-    morgan: ^1.10.0
-    nodemon: ^2.0.15
-    react: ^17.0.2
-    react-dom: ^17.0.2
-    style-loader: ^3.3.1
-    ts-loader: ^9.2.6
-    typescript: ^4.5.2
-    url-loader: ^4.1.1
-    webpack: ^5.64.1
-    webpack-cli: ^4.9.1
-    webpack-dev-server: ^4.5.0
-  languageName: unknown
-  linkType: soft
-
-"TicTacToe-server@workspace:packages/server":
-  version: 0.0.0-use.local
-  resolution: "TicTacToe-server@workspace:packages/server"
-  dependencies:
-    "@types/cookie-parser": ^1.4.2
-    "@types/cors": ^2.8.12
-    "@types/debug": ^4.1.7
-    "@types/express": ^4.17.13
-    "@types/morgan": ^1.9.3
-    "@types/node": ^16.11.8
-    clean-webpack-plugin: ^4.0.0
-    concurrently: ^6.4.0
-    cookie-parser: ~1.4.4
-    cors: ^2.8.5
-    express: ~4.16.1
-    morgan: ~1.9.1
-    nodemon: ^2.0.15
-    source-map-support: ^0.5.21
-    ts-loader: ^9.2.6
-    typescript: ^4.5.2
-    webpack: ^5.64.4
-    webpack-cli: ^4.9.1
-    webpack-node-externals: ^3.0.0
-  languageName: unknown
-  linkType: soft
-
-"TicTacToe-shared@workspace:packages/shared":
-  version: 0.0.0-use.local
-  resolution: "TicTacToe-shared@workspace:packages/shared"
-  dependencies:
-    typescript: ^4.5.2
-  languageName: unknown
-  linkType: soft
-
-"TicTacToe@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "TicTacToe@workspace:."
-  dependencies:
-    "@types/jest": ^27.0.3
-    "@typescript-eslint/eslint-plugin": ^5.4.0
-    "@typescript-eslint/parser": ^5.4.0
-    cross-env: ^7.0.3
-    eslint: ^7.11.0
-    eslint-config-airbnb-base: ^14.2.1
-    eslint-config-prettier: ^8.3.0
-    eslint-import-resolver-typescript: ^2.5.0
-    eslint-plugin-import: ^2.25.3
-    eslint-plugin-jest: ^25.2.4
-    husky: ^7.0.4
-    jest: 27.4.0
-    jest-transform-stub: ^2.0.0
-    lint-staged: ^12.0.3
-    prettier: ^2.4.1
-    ts-jest: 27.0.7
-    ts-node: ^10.4.0
-    typescript: ^4.5.2
-  languageName: unknown
-  linkType: soft
 
 "abab@npm:^2.0.3, abab@npm:^2.0.5":
   version: 2.0.6
@@ -6641,7 +6655,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"memfs@npm:^3.4.12, memfs@npm:^3.4.3":
+"memfs@npm:^3.4.3":
   version: 3.4.13
   resolution: "memfs@npm:3.4.13"
   dependencies:
@@ -8521,9 +8535,9 @@ __metadata:
   linkType: hard
 
 "spawn-command@npm:^0.0.2-1":
-  version: 0.0.2-1
-  resolution: "spawn-command@npm:0.0.2-1"
-  checksum: 2cac8519332193d1ed37d57298c4a1f73095e9edd20440fbab4aa47f531da83831734f2b51c44bb42b2747bf3485dec3fa2b0a1003f74c67561f2636622e328b
+  version: 0.0.2
+  resolution: "spawn-command@npm:0.0.2"
+  checksum: e35c5d28177b4d461d33c88cc11f6f3a5079e2b132c11e1746453bbb7a0c0b8a634f07541a2a234fa4758239d88203b758def509161b651e81958894c0b4b64b
   languageName: node
   linkType: hard
 
@@ -9482,21 +9496,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-dev-middleware@npm:*":
-  version: 6.0.1
-  resolution: "webpack-dev-middleware@npm:6.0.1"
-  dependencies:
-    colorette: ^2.0.10
-    memfs: ^3.4.12
-    mime-types: ^2.1.31
-    range-parser: ^1.2.1
-    schema-utils: ^4.0.0
-  peerDependencies:
-    webpack: ^5.0.0
-  checksum: eeda09cf4a1fdb09ee95f96ab657b0fb8d32c56f4d20c7f4499457a015c703f243711fda0b5bc0d103ff9e7c7b9b60568210a4c0fbd6d02361d09d2387cd723a
-  languageName: node
-  linkType: hard
-
 "webpack-dev-middleware@npm:^5.3.1":
   version: 5.3.3
   resolution: "webpack-dev-middleware@npm:5.3.3"
@@ -9580,7 +9579,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5, webpack@npm:^5.64.1, webpack@npm:^5.64.4":
+"webpack@npm:^5, webpack@npm:^5.38.1, webpack@npm:^5.64.1, webpack@npm:^5.64.4":
   version: 5.75.0
   resolution: "webpack@npm:5.75.0"
   dependencies:

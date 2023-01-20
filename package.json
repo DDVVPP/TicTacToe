@@ -1,5 +1,5 @@
 {
-  "name": "TicTacToe",
+  "name": "@TicTacToe",
   "version": "1.0.0",
   "description": "The TicTacToe challenge project",
   "repository": "https://github.com/DDVVPP/TicTacToe",
@@ -11,6 +11,7 @@
     "packages/*"
   ],
   "dependencies": {
+    "@TicTacToe-shared": "file:packages/shared",
     "cross-env": "^7.0.3"
   },
   "devDependencies": {

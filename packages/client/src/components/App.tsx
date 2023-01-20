@@ -1,7 +1,8 @@
 import '../styles/reset.css';
+import { TicTacToeContainer } from './TicTacToe';
 
 export const App = () => (
   <main>
-    <div>FIXME: add your solution here!</div>
+    <TicTacToeContainer />
   </main>
 );

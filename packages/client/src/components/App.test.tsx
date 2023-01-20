@@ -1,5 +1,6 @@
-import { _, GameStatus } from '../../../shared';
 import { render, screen, waitFor } from '@testing-library/react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { _, GameStatus } from "@TicTacToe-shared";
 import { App } from './App';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -10,7 +11,7 @@ globalRef.fetch = jest.fn(() =>
   Promise.resolve({
     json: jest.fn(() => Promise.resolve(mockData)),
   }),
-);
+)
 
 describe('App', () => {
   beforeEach(() => {
@@ -25,7 +26,7 @@ describe('App', () => {
     await waitFor(() => {
       // feel free to update this test or delete it if tests like this aren't
       // useful for your development process
-      const status = screen.getByText('FIXME: add your solution here!');
+      const status = screen.getByText('Tic Tac Toe');
       expect(status).toBeInTheDocument();
     });
   });

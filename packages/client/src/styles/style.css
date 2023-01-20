@@ -1,0 +1,106 @@
+/* <TicTacToeContainer /> */
+.layoutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 80px;
+}
+
+.layoutContainer h1 {
+  font-size: larger;
+}
+
+button {
+  background-color: rgb(255, 208, 208);
+  border: 1.5px solid rgb(255, 149, 149);
+  cursor: pointer;
+  margin: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100px;
+
+}
+
+button:disabled {
+  background-color: rgb(228, 228, 228);
+  border: 1px solid rgba(104, 103, 103, 0.8);
+  cursor: not-allowed;
+}
+
+p {
+  padding: 10px;
+  text-align: center;
+}
+
+/* <TicTacToeParams /> */
+.logisticsContainer {
+  margin: 20px;
+}
+
+.logisticsContainer .playerContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logisticsContainer .difficultyContainer {
+  display: flex;
+  align-items: center;
+}
+
+.startButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.startButtonContainer .startButton {
+  border: 1px solid rgba(104, 103, 103, 0.8);
+  cursor: pointer;
+  font-size: medium;
+  height: 60px;
+  margin: 20px;
+  text-align: center;
+}
+
+.startButtonContainer .startButton:disabled {
+  cursor: not-allowed
+}
+
+/* <TicTacToeBoard /> */
+.gridContainer {
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 30px;
+}
+
+button.cell {
+  border: 1px solid rgba(104, 103, 103, 0.8);
+  color: rgb(78, 67, 67);
+  cursor: pointer;
+  font-size: 30px;
+  height: 80px;
+  margin: 2px;
+  text-align: center;
+}
+
+button.winningCell {
+  border: 1px solid rgba(104, 103, 103, 0.8);
+  color: rgb(78, 67, 67);
+  cursor: pointer;
+  font-size: 30px;
+  height: 80px;
+  margin: 2px;
+  text-align: center;
+  background-color: rgb(255, 208, 208);
+}
+
+button.cell:disabled {
+  cursor: not-allowed;
+  color: rgba(107, 106, 106, 0.8);
+}
+
+button.winningCell:disabled {
+  cursor: not-allowed;
+  color: rgba(107, 106, 106, 0.8);
+}
